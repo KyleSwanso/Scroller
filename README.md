@@ -1,6 +1,4 @@
 # Scroller
-Scrolling LED Marquee displays text messages (SMS).
-
 Scroller is a node.js webserver paired with a Particle Photon to enable the display of text messages (SMS) on an LED matrix.
 
 Program flow:
