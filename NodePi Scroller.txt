@@ -1,4 +1,7 @@
-//Libraries.
+//Running on Raspbian.  
+//Have installed node.js with express and particle-api-js.
+
+//Libraries and Constructors.
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
@@ -12,20 +15,22 @@ var particle = new Particle();
 
 
 //Twilio credentials. Global variables.
+//Replace Account SID and Auth token with your own.
 var accountSid = 'ACCOUNT SID';
 var authToken = "AUTH TOKEN";
 var client = require('twilio')(accountSid, authToken);
 
 //Particle credentials. Global variables.
+//Replace device ID and Particle token with your own.
 var d_id = 'DEVICE ID';
 var p_token = "PARTICLE TOKEN";
 
-
+//GET some.
 app.get('/', function(req, res) {
-    res.send('Hello World!');
+    res.send('Hello, your server is running.');
 });
 
-
+//POST some.
 app.post('/', urlencodedParser, function(req, res) {
 	console.log(req.body);
 
@@ -51,6 +56,7 @@ app.post('/', urlencodedParser, function(req, res) {
     	}, 200);
 });
 
+//Listening for wascally wabbits.
 app.listen(3000, function() {
 	console.log('Example app listening on port 3000!');
 });
