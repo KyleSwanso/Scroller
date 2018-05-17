@@ -43,4 +43,5 @@ Future implementation will support up to 255 character messages.
 ```
 Switch from Particle Function to Particle Events.
 Add message parsing to enable the addition of control codes.
+Create a message queue.
 ```
