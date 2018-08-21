@@ -14,6 +14,7 @@ Message is displayed to the LED matrix.
 ```
 You will need a Twilio account (twilio.com) or similar SMS gateway.  
 You will need a Particle IO account (particle.io) and a Particle Photon or similar.
+You will need a Raspberry Pi or similar with node.js + express, and body-parser installed.
 An LED matrix of your choice.  We used Adafruit "neoPixel" brand LED strips to build a large matrix.
 An LED power supply.  Please select one with enough current for your needs.
 Level-Shifter (3.3v to 5v). We used a TXB0108 from Adafruit.
@@ -35,13 +36,14 @@ Everything can be found online at Adafruit or Amazon.
 
 **Limitations:**
 ```
-Currently the program only supports up to 63 character messages.
-Future implementation will support up to 255 character messages.
+The program supports up to 255 character messages.
+~100+ actively queued messages before RAM on the Particle Photon becomes an issue.
 ```
 
 **TO-DO:**
 ```
-Switch from Particle Function to Particle Events.
-Add message parsing to enable the addition of control codes.
-Create a message queue.
+Create website interface.
+Multiple message queues without cloning messages.
+Tweak displayed text color range.
+Observe for bugs.
 ```
