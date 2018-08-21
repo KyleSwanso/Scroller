@@ -1,0 +1,9 @@
+  //Subscribe to a Particle Event. In setup()
+  Particle.subscribe("msg_event", msgHandler);
+
+//This is our Particle Event handler
+void msgHandler(const char *event, const char *data)
+{
+  message = data;
+  //message = data.c_str();
+}
