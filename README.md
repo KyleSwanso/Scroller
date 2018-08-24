@@ -27,6 +27,7 @@ Waterproof wiring connectors. 2-pin. (Optional).  Allows fast and easy removal o
 Don't forget the 300 ohm resistor on your data input.  
 Your Power supply should have a safety margin. Get more current than you need.
 Don't be a neanderthal.  Use heat shrink tubing on your soldered wires.
+You may need to add a port forward in your router settings.
 ```
 
 **Suppliers:**
