@@ -1,5 +1,5 @@
 # Scroller
-##Scroller is a node.js webserver paired with a Particle Photon to enable the display of text messages (SMS) on an LED matrix.
+##Scroller is a Node webserver paired with a Particle Photon to enable the display of text messages (SMS) on an LED matrix.
 
 **Program flow:**
 ```
